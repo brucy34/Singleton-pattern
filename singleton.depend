@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1601765638 source:c:\user\saintilma\desktop\debut\singleton\pattern.cpp
+	"pattern.h"
+
+1601767407 c:\user\saintilma\desktop\debut\singleton\pattern.h
+	<iostream>
+	<string>
+
+1601766594 source:c:\user\saintilma\desktop\debut\singleton\main.cpp
+	<iostream>
+	<string>
+	"pattern.h"
+
