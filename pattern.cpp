@@ -7,9 +7,9 @@ Voiture::Voiture(int roues,std::string couleur):m_roues(roues),m_couleur(couleur
 {
 
 }
-Voiture::Voiture *Voiture::GetInstance()
+Voiture static Voiture::Voiture *get()
 {
-  if (singleton==nullptr)
+  if (!singleton)
    {
        singleton=new Voiture;
    }
