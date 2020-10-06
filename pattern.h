@@ -9,14 +9,23 @@
 class Voiture
 {
     public:
-    Voiture();
+
     Voiture(int roues, std::string couleur);
 
-    Voiture (Voiture &other)=delete;
 
-    void operator=(const Voiture &)=delete;
+    Voiture (Voiture&)=delete;
 
-    static Voiture *GetInstance();
+    Voiture& operator=(const Voiture &)=delete;
+
+
+static Voiture *get()
+{
+  if (!singleton)
+   {
+       singleton=new Voiture;
+   }
+   return singleton;
+}
 
     void affiche(std::ostream &flux) const;
 
@@ -25,6 +34,7 @@ class Voiture
     int m_roues;
     std::string m_couleur;
     static Voiture *singleton;
+     Voiture();
 };
 
 std::ostream& operator<<(std::ostream& flux, Voiture const& Voiture);

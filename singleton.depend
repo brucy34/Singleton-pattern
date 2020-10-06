@@ -16,7 +16,10 @@
 	<string>
 	"pattern.h"
 
-1601852420 c:\users\saintilma\desktop\singleton\pattern.h
+1602002043 c:\users\saintilma\desktop\singleton\pattern.h
 	<iostream>
 	<string>
+
+1602000081 source:c:\users\saintilma\desktop\singleton\pattern.cpp
+	"pattern.h"
 
