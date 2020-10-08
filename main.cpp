@@ -7,9 +7,7 @@ using namespace std;
 
 int main()
 {
-    Voiture t(4,"rouge");
-    Voiture s(4,"vert");
+    Voiture t(4,"rouge"); //it is not a compilator problem
     cout<<t<<endl;
-    cout<<s<<endl;
     return 0;
 }
